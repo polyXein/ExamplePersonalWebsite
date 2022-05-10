@@ -1,0 +1,220 @@
+.project {
+  width: 560px;
+  height: 290px;
+  margin: 1.5rem;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  -webkit-box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.project div:nth-of-type(1) {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  color: #f9d3b4;
+}
+
+.project div:nth-of-type(1) {
+  padding-top: 20px;
+  text-decoration: none;
+  color: #f9d3b4;
+}
+
+.project:hover {
+  -webkit-box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+
+.project div:nth-of-type(2) {
+  width: 100%;
+  height: 100%;
+}
+
+.project div:nth-of-type(2) img {
+  height: 100%;
+  width: 100%;
+}
+
+.project div:nth-of-type(3) {
+  z-index: 2;
+  background-color: #343739;
+  padding: 14px 18px 18px 18px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.project div:nth-of-type(3) > a {
+  text-decoration: none;
+}
+
+.project div:nth-of-type(3) span {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+
+.project div:nth-of-type(3) h3 {
+  margin-top: 5px;
+  font-family: "Roboto Slab", serif;
+  color: #f9d3b4;
+}
+
+.project:hover div:nth-of-type(2) {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.project:hover div:nth-of-type(3) {
+  background-color: transparent;
+}
+
+.project:hover div:nth-of-type(1) {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1350px) {
+  .project {
+    width: 500px;
+    height: 240px;
+    margin: 1.5rem;
+    margin-bottom: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 1188px) {
+  .project {
+    width: 440px;
+    height: 210px;
+    margin: 1.5rem;
+    margin-bottom: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .project {
+    width: 360px;
+    height: 210px;
+    margin: 1.5rem;
+    margin-bottom: 2.2rem;
+  }
+  .project div:nth-of-type(3) {
+    z-index: 2;
+    background-color: #343739;
+    padding: 14px 16px 16px 16px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .project div:nth-of-type(3) span {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 874px) {
+  .project {
+    width: 300px;
+    height: 180px;
+    margin: 1.5rem;
+    margin-bottom: 2.2rem;
+  }
+  .project div:nth-of-type(3) {
+    z-index: 2;
+    background-color: #343739;
+    padding: 12px 6px 6px 6px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .project div:nth-of-type(3) span {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 733px) {
+  .project {
+    width: 440px;
+    height: 250px;
+    margin: 1.5rem;
+    margin-bottom: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .project {
+    width: 350px;
+    height: 250px;
+    margin: 1.5rem;
+    margin-bottom: 2.2rem;
+  }
+  .project div:nth-of-type(3) {
+    z-index: 2;
+    background-color: #343739;
+    padding: 8px 4px 4px 4px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .project div:nth-of-type(3) span {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .project {
+    width: 300px;
+    height: 200px;
+    margin: 1.5rem;
+    margin-bottom: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .project {
+    width: 260px;
+    height: 170px;
+    margin: 1rem;
+    margin-bottom: 2.2rem;
+  }
+  .project div:nth-of-type(3) span {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .project {
+    width: 200px;
+    height: 100px;
+    margin: 1rem;
+    margin-bottom: 2.2rem;
+  }
+  .project div:nth-of-type(3) {
+    z-index: 2;
+    background-color: #343739;
+    padding: 4px 0px 0px 0px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .project div:nth-of-type(3) span {
+    font-size: 6px;
+  }
+}
+/*# sourceMappingURL=CardProject.css.map */
