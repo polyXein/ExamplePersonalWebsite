@@ -1,0 +1,303 @@
+.skills-page{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #212426; 
+
+}
+
+.container__softSkills{
+    width: 90%;
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+   
+}
+
+.container__title__softSkills{
+    border: 1px solid transparent;
+    font-size: 2.4rem;
+    color: white;
+    
+    position: relative;
+    bottom: 30px;
+    left: 24px;
+}
+
+.box__letters{
+    border-radius: 20px;
+    padding: 10px;
+    &:hover{
+        background: #ffd700;
+        color: #333;
+    }
+
+}
+
+.container_cards{
+    position: relative;
+    bottom: 60px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 70%;
+    height: 300px;
+    color: white;
+    background-color: yellow;
+    padding: 10px;
+    overflow: scroll;
+    overflow-y: hidden;
+    
+}
+
+
+.card__skill{
+    color: white;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5px ;
+
+    a {
+        font-size: 40px;
+        color: #4d4d4e;
+        display: block;
+        line-height: 51px;
+        position:relative;
+        text-decoration: none;         
+
+    i{
+        transition: all 0.3s ease-out;
+    }
+    &:hover {
+        color: #ffd700;
+
+        svg{
+            opacity:0.7;
+        }
+
+        &:after
+        {
+            opacity: 1;
+         }
+    }
+       
+    }
+ 
+}
+.card__wrapper{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    p{
+        font-size: 3rem;
+    } &:hover {
+        color: #ffd700;
+
+        svg{
+            opacity:0.7;
+        }
+
+        &:after
+        {
+            opacity: 1;
+         }
+    }   
+}
+
+.card{
+    width: 100%;
+    height: 200px;
+    background-color: #444;
+    color: white;
+    font-size: 30px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__container{
+    padding-left: 54px !important;
+    width: 90% !important;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .container__title__softSkills{
+        font-size: 40px !important;
+    }
+
+        .card__skill{
+            a{
+                font-size: 30px;
+            }
+        }
+
+        .card__wrapper{
+            p{
+                font-size: 2.4rem;
+            } 
+        }
+       
+        .card{
+            width: 100%;
+            height: 150px;
+        }
+}
+
+
+@media screen and (max-width: 440px){
+
+    .container__title__softSkills{
+        font-size: 30px !important;
+    }
+
+        .card__skill{
+            a{
+                font-size: 20px;
+            }
+        }
+
+        .card__wrapper{
+            p{
+                font-size: 1.8rem;
+            } 
+        }
+        .card{
+            width: 100%;
+            height: 140px;
+        }
+}
+
+@media screen and (max-width: 380px){
+
+    .container__title__softSkills{
+        font-size: 20px;
+    }
+
+        .card__skill{
+            a{
+                font-size: 20px;
+            }
+        }
+
+        .card__wrapper{
+            p{
+                font-size: 1.2rem;
+            } 
+        }
+        .card{
+            width: 100%;
+            height: 130px;
+        }
+}
+/* test */
+
+
+.loader-active{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    animation: fadeOut 2s 2s;
+    animation-fill-mode: forwards ;
+  }
+
+ .skills-page
+        {
+    .text-zone{
+        position:absolute;
+        left:10%;
+        top: 50%;
+        transform: translateY(-50%); 
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 70%;
+    
+
+    h1{
+        font-size: 53px;
+        font-family: 'Coolvetica', cursive;
+        color: #ffd700;
+        font-weight: 400;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 40px;
+        left:10px;
+
+        &::before{
+            content: '<h1>';
+            font-family: 'La Belle Aurore', cursive;
+            font-size: 18px;
+            position: absolute;
+            margin-top:-10px;
+            left: -10px;
+            opacity: 0.6;
+            line-height: 18px;
+        }
+
+        &::after{
+            content: '<h1/>';
+            font-family: 'La Belle Aurore', cursive;
+            font-size: 18px;
+            line-height: 18px;
+            position: absolute;
+            left: -30px;
+            bottom: -20px;
+            margin-left: 20px;
+            opacity: 0.6;
+
+        }
+    }
+
+
+    p{
+        font-size: 14px;
+        font-style: 13px;
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: 300;
+        min-width: fit-content;
+        animation: pulse 1s;
+
+        &:nth-of-type(1){
+            animation-delay: 1.1s;
+        }
+
+        &:nth-of-type(2){
+            animation-delay: 1.2s;
+        }
+        &:nth-of-type(3){
+            animation-delay: 1.3s;
+        }
+    }
+}
+    .text-animate-hover{
+        &:hover{
+            color: #fff;
+        }
+    }
+}
