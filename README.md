@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## About this project
+-This project is to practice some animations, using gsap-trial, react-flip-move,
+javascript, animation.css, fontawesome, Material Ui among others..
+The main reason of this project is only to practice and learn more how to use and what issue it can to result..
+
 ## Available Scripts
 
 In the project directory, you can run:
